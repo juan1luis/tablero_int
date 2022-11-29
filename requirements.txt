@@ -3,7 +3,6 @@ altair
 pandas
 numpy
 matplotlib
-json
 plotly
 plotly_express
 math
