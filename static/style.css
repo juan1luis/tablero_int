@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    background: gainsboro;
+}
+
+.header{
+    background: #1b3986;
+    color:#fff;
+    height: 60px;
+    text-align: center;
+    font-size:35px;
+}
+.cuadrante_Ar{
+    display: flex;
+    margin-top: 20px;
+}
+
+.cuadrante_1{
+    width: 300px;
+    height:340px;
+    background: #304d94;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-right: 80px;
+}
+.cuadrante_1 h1{
+    text-align: center;
+}
+.container_porcentaje_1{
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top:5px;
+}
+.container_porcentaje_1 h3{
+    color:gray;
+}
+.container_porcentaje_2{
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.container_porcentaje_2 h3{
+    color:gray;
+}
+.numero_p{
+    display: block;
+    margin-left: 40%;
+}
+.numero_po{
+    color:#fff; 
+    font-size:40px;
+}
+.numero_p_p{
+    display: flex;
+}
+.card_body_sunbur_g{
+    margin-right: 35px;
+}
+#sunbur_g{
+    width: 400px;
+    height:400px;
+}
+#barras_g{
+    width: 610px;
+    height:400px;
+}
+
+.cuadrante_Ab{
+    display: flex;
+    margin-left: 120px;
+    
+}
+.card_body_pie_g{
+    margin-right: 35px;
+}
+#pie_g{
+    width: 400px;
+    height:400px;
+}
+.descrip_canva_k{
+    width: 400px;
+    text-align: center;
+    color:#fff;
+    background: #000;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0 10px;
+}
+
+.descrip_canva_j{
+    width: 610px;
+    text-align: center;
+    color:#fff;
+    background: #000;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 0 10px;
+}
+.cuadrante_2{
+    margin-left:200px;
+}
+
+#alluvial_g{
+    width: 900px;
+    height: 400px;
+}
+
+
+.foot{
+    height: 60px;
+    background: black;
+    color:#fff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.foot h5{
+    display: block;
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.descrip_canva{
+    text-align: justify;
+    color:#fff;
+    background: #000;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.descrip_canva p{
+    padding: 0px 5px;
+}

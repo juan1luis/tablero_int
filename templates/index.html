@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}"/>
+    
+    <title>PI</title>
+</head> 
+<body>
+    <div class = "header">Programas Internacionales</div>
+    <div class ="cuadrante_Ar">
+        <div class = "cuadrante_1">
+            <h1>Indicadores</h1>
+            <div class="container_porcentaje_1">
+                <div class="numero_p">
+                    <div class = "numero_p_p">
+                        <h1 class="numero_po">{{P_AS}}</h1>
+                        <h1 class="porcentaje">%</h1>
+                    </div> 
+                </div>
+                <h3>Study Abroad</h3>
+            </div>
+            <div class="container_porcentaje_2">
+                <div class="numero_p">
+                    <div class = "numero_p_p">
+                        <h1 class="numero_po">{{P_selec_op1}}</h1>
+                        <h1 class="porcentaje">%</h1>
+                    </div>
+                </div>
+                <h3>Primera Opcion</h3>
+            </div>
+        </div>
+
+        <div class="cuadrante_2">
+            <canva id = 'alluvial_g'></canva>
+            <div class="descrip_canva">
+                <p>Flujo de las escuela atravez de que tipo de programa son asignado
+                     y hacia que pais se dirigen los mismos.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cuadrante_Ab">
+
+        <div class = "card_body_pie_g">
+            <canva id = 'pie_g'></canva>
+            <div class="descrip_canva_k">
+                <p>Porcentaje de opcion asignada para alumnos en programa Internacional.</p>
+            </div> 
+        </div>
+
+        <div class="card_body_sunbur_g">
+            <canva id = 'sunbur_g'></canva>
+            <div class="descrip_canva_k">
+                <p>Muestra de la cantidad de Niveles y su distribucion en carreras.</p>
+            </div>
+        </div>
+
+        <div class="card_body_barras_g">
+            <canva id = 'barras_g'></canva>
+            <div class="descrip_canva_j">
+                <p>Cantidad de alumnos asignados a los programas y su distribucion por escuela.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <h5>By Juan Luis Saenz Armendariz A01562193</h5>
+    </div>
+   
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script type="text/javascript">
+    var graphs1 = {{ g_alluvial | safe}};
+    Plotly.plot("alluvial_g", graphs1,{});
+</script>
+
+<script type="text/javascript">
+    var graphs2 = {{ g_pie | safe}};
+    Plotly.plot("pie_g", graphs2,{});
+</script>
+
+<script type="text/javascript">
+    var graphs3 = {{ g_sunbur | safe}};
+    Plotly.plot("sunbur_g", graphs3,{});
+</script>
+
+<script type="text/javascript">
+    var graphs4 = {{ g_barras | safe}};
+    Plotly.plot("barras_g", graphs4,{});
+</script>
+
+
+</body>
+</html>
