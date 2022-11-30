@@ -1,7 +1,0 @@
-flask
-altair
-pandas
-numpy
-matplotlib
-plotly
-plotly_express
