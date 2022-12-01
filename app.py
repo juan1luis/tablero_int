@@ -9,8 +9,9 @@ import math
 
 app = Flask(__name__) 
 
+dset_rute = 'https://raw.githubusercontent.com/juan1luis/tablero_int/main/Programas_Int.csv'
 
-info_carre = pd.read_csv('Programas_Int.csv')
+info_carre = pd.read_csv(dset_rute)
 
 @app.route('/')
 def charts():
