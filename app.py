@@ -31,7 +31,6 @@ def charts():
     AS = ty_opor.iloc[1][1] - No_selec
     INT = ty_opor.iloc[0][1] 
     P_AS = math.floor((AS/(AS+INT))*100)
-    P_INT = math.floor((INT/(AS+INT))*100)
 
     
     #-----------------------------------------------------------------------------------------------------------#
